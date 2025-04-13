@@ -2,3 +2,32 @@
 <p>about works!</p>
 <h3>this is about componet</h3>
 </div>
+{{mydate}}
+<h1>{{mydate1}}</h1>
+<h1>{{mydate1 | date: 'short'}}</h1>
+<h1>{{mydate1 | date: 'shortDate'}}</h1>
+<h1>{{mydate1 | date: 'YYYY-MM-d'}}</h1>
+
+<h1>json pipe</h1>
+
+{{student | json}}
+
+<h1>for loop start</h1>
+ 
+<ul>
+    <li *ngFor="let a of student">{{a.name | uppercase}} , {{a.age}} </li>
+</ul>
+
+<ul>
+    <li *ngFor="let a of users">{{a.title | uppercase}}</li>
+</ul>
+
+<select>
+    <option *ngFor="let a of users"> {{a.title}}</option>
+</select>
+
+
+
+
+
+<h1>for loop end--------------------</h1>
